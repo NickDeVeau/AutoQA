@@ -1,0 +1,149 @@
+﻿
+        public async Task PostBody()
+        {
+            var endpoint = "/api/Member/LoginMemberByEmailAndType";
+
+            var requestForm = new Dictionary<string, object>
+            {
+                { "email", "user1.innovation@redcross.org" },
+                {"userType","3" }
+            };
+
+            await API.PostToEndpoint(endpoint, requestForm);
+        }
+
+################################################################################################
+
+        public async Task GetDatesWithOpenShifts()
+        {
+            var endpoint = "/api/OpenShifts/GetDatesWithOpenShifts";
+
+            var parameters = new Dictionary<string, string>
+            {
+
+                { "siteId", "3" },
+                {"memberId","53" }
+
+            };
+
+            var definitions = new Dictionary<string, object>
+            {
+                {"message", "Open shift not found"}
+            };
+
+            await API.VerifyDefinitionExists(endpoint, parameters, definitions);
+        }
+
+################################################################################################
+
+        public async Task CheckNull)
+        {
+            var endpoint = "/api/Site/GetMemberSitesByMemberId";
+
+            var parameters = new Dictionary<string, string>
+            {
+                //Not sure what values to put here.
+                { "memberId", "53" }
+
+            };
+
+            var definitions = new List<string>
+            {
+                {"siteName"}
+            };
+
+            await API.AssertKeysNotNull(endpoint, parameters, definitions);
+        }
+
+################################################################################################
+
+        public async Task Put()
+        {
+            var endpoint = "/api/Audience";
+
+            var requestForm = new Dictionary<string, object>
+            {
+                { "audienceId", audienceId },
+                {"audienceName", "APITEST" },
+                { "memberIds",new List<int> {53,52}}
+            };
+
+
+            await API.PutToEndpoint(endpoint, requestForm);
+        }
+
+################################################################################################
+
+        public async Task Delete()
+        {
+            var endpoint = "/api/admin/SiteContact";
+
+            var parameters = new Dictionary<string, string>
+                    {
+                        { "id", $"{siteContactId}" }
+                    };
+
+            await API.DeleteFromEndpoint(endpoint, parameters);
+        }
+
+################################################################################################
+
+        public async Task PostParam()
+        {
+            var endpoint = "/api/Notification/SendTestNotification";
+
+            var parameters = new Dictionary<string, string>
+                    {
+                        {"tagId", "87100CA9-A662-40C8-92C4-4AF2F6329D8F" },
+                        {"title","TestTitle" },
+                        {"message","TestMessage"}
+                    };
+
+            await API.PostToEndpointWithParams(endpoint, parameters);
+        }
+
+################################################################################################
+
+        variable = await API.FindNestedValue(endpoint, parameters, "Identifier Key", "Identifier Value", "Target Value", false);
+
+################################################################################################
+
+        public async Task DeleteAndPost()
+        {
+            
+                var postEndpoint = "/api/Audience";
+                var getEndpoint = "/api/Audience/siteAudiences";
+
+                var getParameters = new Dictionary<string, string>
+                {
+                    { "Get", "Parameters" }
+                };
+
+                    var getDefinitions = new Dictionary<string, object>
+                {
+                    { "Target", "Key and Value" }
+                };
+
+                    var postRequestForm = new Dictionary<string, object>
+                {
+                    { "Post", "Form" } //CAN ALSO BE PARAMETERS
+                };
+
+                var defExists = await API.VerifyDefinitionExists(getEndpoint, getParameters, getDefinitions, false);
+                if (defExists == true)
+                {
+                    var existingKey = Any Retrieval Method
+
+                    var deleteEndpoint = "deleteEndpoint";
+
+                    var deleteParameters = new Dictionary<string, string>
+                {
+                    { "Delete", existingKey.ToString() },
+                };
+
+                    await API.DeleteFromEndpoint(deleteEndpoint, deleteParameters);
+                }
+
+                await API.PostToEndpoint(postEndpoint, postRequestForm);
+
+        }
