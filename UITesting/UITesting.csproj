@@ -30,7 +30,8 @@
 
   <ItemGroup>
     <None Remove="Utilities\" />
-    <None Remove="ViewModels\" />
+    <None Remove="TestSuites\" />
+    <None Remove="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="UITesting.csproj" />
@@ -42,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="TestSuites\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
 </Project>

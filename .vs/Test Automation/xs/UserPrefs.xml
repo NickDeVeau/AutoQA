@@ -1,0 +1,69 @@
+﻿<Properties StartupConfiguration="{81B7A207-9856-4BF6-9EF8-D989AB8CA189}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.APITesting PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nickdeveau/Projects/Test Automation/UITesting/TestSuites/example.cs" relfile="UITesting/TestSuites/example.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITesting/BaseTestUI.cs">
+    <Files>
+      <File FileName="APITesting/Utilities/SampleTests.txt" />
+      <File FileName="APITesting/APITesting.csproj" />
+      <File FileName="APITesting/TestSuites/MyShifts.cs" />
+      <File FileName="APITesting/TestSuites/Overview.cs" />
+      <File FileName="UITesting/TestSuites/RegionalContacts.cs" />
+      <File FileName="UITesting/TestSuites/Login.cs" />
+      <File FileName="UITesting/Pages/pgRegionalContacts.cs" />
+      <File FileName="UITesting/Pages/pgLogin.cs" />
+      <File FileName="UITesting/Pages/pgHome.cs" />
+      <File FileName="UITesting/BaseTestUI.cs" Line="95" Column="1" />
+      <File FileName="APITesting/TestSuites/SiteSettings.cs" />
+      <File FileName="APITesting/TestSuites/Audience.cs" />
+      <File FileName="APITesting/TestSuites/DispatchRequest.cs" />
+      <File FileName="APITesting/TestSuites/GeneralAvailability.cs" />
+      <File FileName="APITesting/TestSuites/LoginActivity.cs" />
+      <File FileName="APITesting/TestSuites/Member.cs" />
+      <File FileName="APITesting/TestSuites/Newsfeed.cs" />
+      <File FileName="APITesting/TestSuites/Notification.cs" />
+      <File FileName="APITesting/TestSuites/NotificationSettings.cs" />
+      <File FileName="APITesting/TestSuites/OpenShifts.cs" />
+      <File FileName="APITesting/TestSuites/Site.cs" />
+      <File FileName="APITesting/TestSuites/SiteContact.cs" />
+      <File FileName="APITesting/Utilities/API.cs" />
+      <File FileName="APITesting/Utilities/BaseUtilities.cs" />
+      <File FileName="APITesting/App.config" />
+      <File FileName="APITesting/appsettings.json" />
+      <File FileName="APITesting/BaseTestAPI.cs" />
+      <File FileName="UITesting/Utilities/BaseUtilities.cs" />
+      <File FileName="UITesting/Utilities/Driver.cs" />
+      <File FileName="UITesting/Pages/pgOverview.cs" />
+      <File FileName="UITesting/TestSuites/Overview.cs" />
+      <File FileName="UITesting/appsettings.json" />
+      <File FileName="UITesting/TestSuites/Dispatches.cs" />
+      <File FileName="UITesting/log4net.config" />
+      <File FileName="UITesting/TestSuites/Home.cs" Line="34" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Test Automation">
+            <Node name="APITesting">
+              <Node name="Utilities" expanded="True" />
+            </Node>
+            <Node name="UITesting">
+              <Node name="BaseTestUI.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Test Automation" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
