@@ -1,33 +1,41 @@
-# The American Red Cross - Test Automation
+# Test Automation Repository README
 
-## Introduction
-The American Red Cross Test Automation project is an initiative to ensure the robustness of our applications and platforms by testing both UI and API components. Our testing frameworks include Selenium for UI, log4net for logging, Extent Reports for visual reports, and NUnit as our testing framework. Our repository, "Test Automation" on Azure DevOps, aims to create a transparent and repeatable testing process.
+## Overview
+Welcome to our Test Automation Repository! This framework is designed to automate testing for Mobile App UIs, Web UIs, and API endpoints. Powered by a robust suite of technologies including Selenium, Appium, NUnit, .NET Core, Bootstrap, and SQLServer, our framework offers a comprehensive testing experience.
+
+## Features
+- **Versatility**: Test Mobile App UIs, Web UIs, and API endpoints seamlessly.
+- **Independent Projects**: The API, WebUI, and AppUI projects operate independently of one another. You can work on and execute them separately.
+- **Configuration**: Each project comes with its own `appsettings.json` allowing for easy configuration and setup.
+- **Parallel or Sequential Testing**: Depending on your needs, execute tests in series or in parallel.
+- **Detailed Reports**: When tests are run locally, detailed reports with screenshots are generated for a thorough examination.
 
 ## Getting Started
 
-### Installation Process
-1. Clone the repository from Azure DevOps.
-2. Ensure that your environment has the required tools such as Selenium, log4net, NUnit, and Extent Reports.
-3. Follow the build steps as outlined in the subsequent section.
+1. **Prerequisites**:
+   - Ensure you have .NET Core SDK installed.
+   - SQLServer should be set up for database-related tests.
+   - Appropriate drivers for Selenium and Appium based on your OS and browsers/devices.
 
-### Software Dependencies
-- **Testing Framework**: NUnit (v3.13.3) combined with Microsoft.NET.Test.Sdk.
-- **UI Testing**: Selenium.WebDriver (v4.11.0) with ChromeDriver support (v115.0.5790.17000).
-- **Logging**: log4net (v2.0.15).
-- **Test Reporting**: ExtentReports (v4.1.0).
-- **Configuration Management**: Microsoft.Extensions.Configuration (v7.0.0) and Microsoft.Extensions.Configuration.Json (v7.0.0) for JSON-based configurations.
-- **JSON Handling**: Newtonsoft.Json (v13.0.3).
-- **Test Coverage**: coverlet.collector (v6.0.0) for generating code coverage.
-- **Selenium Utilities**: DotNetSeleniumExtras.WaitHelpers (v3.11.0) for additional WebDriver functionalities.
+2. **Configuration**:
+   - Navigate to the `appsettings.json` of the respective project you're interested in (API, WebUI, AppUI).
+   - Update the settings as per your environment and requirements.
 
-### Latest Releases
-- Please check our Azure DevOps page for the latest releases.
+3. **Running Tests**:
+   - Use NUnit to execute tests.
+   - For parallel execution, use the respective NUnit flags.
+   - For local execution, ensure you're set up to generate reports. Screenshots will be captured for UI-based tests.
 
-### API References
-- TODO: Add links or references to your API documentation.
+4. **Viewing Reports**:
+   - After executing tests locally, navigate to the reports directory to view detailed results with screenshots.
 
-## Build and Test
-To build the solution and run the tests, follow these steps:
-1. Open the solution in your favorite IDE (e.g., Visual Studio).
-2. Build the solution to fetch the required dependencies.
-3. Run the tests using the NUnit test runner.
+## Feedback and Contributions
+Your feedback is invaluable. If you encounter any issues or have suggestions, please open an issue or submit a pull request. We're always looking to improve!
+
+## Technologies Used
+- **Web UI Testing**: Selenium, Bootstrap
+- **Mobile App UI Testing**: Appium
+- **API Testing**: NUnit with .NET Core
+- **Database**: SQLServer
+
+Thank you for using our Test Automation Repository. Happy testing!
