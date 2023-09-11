@@ -1,28 +1,25 @@
-﻿using System.Configuration;
-using AventStack.ExtentReports;
-using AventStack.ExtentReports.Reporter;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 
 namespace UITesting
 {
-    public class AppSettings
-    {
-        public string Url { get; set; }
-    }
-
     public class Driver : BaseTestUI
     {
-       
-        public static IWebDriver Instance { get; private set; }
+        private static ThreadLocal<IWebDriver> _driver = new ThreadLocal<IWebDriver>();
+
+        public static IWebDriver Instance
+        {
+            get { return _driver.Value; }
+            private set { _driver.Value = value; }
+        }
 
         public static void Initialize(string testName)
         {
-            var localChromeDriver = Convert.ToBoolean(_configuration.GetSection("AppInfo:LocalChromeDriver").Value);
+            var localChromeDriver = Convert.ToBoolean(ConfigurationService.Instance.GetValue("AppInfo:LocalChromeDriver"));
             if (localChromeDriver)
             {
                 Instance = new ChromeDriver();
@@ -43,16 +40,13 @@ namespace UITesting
                 capabilities.AddAdditionalOption("bstack:options", browserstackOptions);
 
                 Instance = new RemoteWebDriver(
-
-                new Uri("https://hub.browserstack.com/wd/hub/"), capabilities);
+                    new Uri("https://hub.browserstack.com/wd/hub/"), capabilities);
             }
         }
 
-        
-
         public static void SetZoomLevel(int level)
         {
-            var js = (IJavaScriptExecutor)Driver.Instance;
+            var js = (IJavaScriptExecutor)Instance;
             js.ExecuteScript($"document.body.style.zoom='{level.ToString()}%'");
             Thread.Sleep(3000);
         }
@@ -66,6 +60,5 @@ namespace UITesting
                 Instance = null;
             }
         }
-
     }
 }

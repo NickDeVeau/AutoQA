@@ -11,14 +11,14 @@ namespace UITesting
 {
     public class BaseUtilities
     {
-        private static bool loggerConfigured = false; // Flag to check if logger is already configured
+        private static bool loggerConfigured = false;
 
         public static void DeleteOlderReportFolders(string baseReportFolder)
         {
             var directories = new DirectoryInfo(baseReportFolder).GetDirectories().OrderByDescending(d => d.CreationTime).ToList();
             for (int i = 2; i < directories.Count; i++)
             {
-                directories[i].Delete(true); // Deletes the directory and its contents
+                directories[i].Delete(true);
             }
         }
 
@@ -26,7 +26,6 @@ namespace UITesting
         {
             if (loggerConfigured)
             {
-                // Logger is already configured, no need to set up again
                 return;
             }
 
@@ -60,7 +59,7 @@ namespace UITesting
             hierarchy.Root.Level = log4net.Core.Level.All;
             hierarchy.Configured = true;
 
-            loggerConfigured = true; // Set the flag to indicate logger is configured
+            loggerConfigured = true;
         }
 
 

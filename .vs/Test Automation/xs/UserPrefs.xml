@@ -4,6 +4,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/nickdeveau/Projects/Test Automation/UITesting/TestSuites/example.cs" relfile="UITesting/TestSuites/example.cs" line="19" column="1" />
+      <Breakpoint file="/Users/nickdeveau/Projects/Test Automation/UITesting/Utilities/BaseUtilities.cs" relfile="UITesting/Utilities/BaseUtilities.cs" line="29" column="1" />
+      <Breakpoint file="/Users/nickdeveau/Projects/Test Automation/UITesting/Utilities/BaseUtilities.cs" relfile="UITesting/Utilities/BaseUtilities.cs" line="35" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
@@ -11,7 +13,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="UITesting/BaseTestUI.cs">
     <Files>
       <File FileName="APITesting/Utilities/SampleTests.txt" />
-      <File FileName="APITesting/APITesting.csproj" />
+      <File FileName="APITesting/APITesting.csproj" Line="30" Column="15" />
       <File FileName="APITesting/TestSuites/MyShifts.cs" />
       <File FileName="APITesting/TestSuites/Overview.cs" />
       <File FileName="UITesting/TestSuites/RegionalContacts.cs" />
@@ -19,9 +21,8 @@
       <File FileName="UITesting/Pages/pgRegionalContacts.cs" />
       <File FileName="UITesting/Pages/pgLogin.cs" />
       <File FileName="UITesting/Pages/pgHome.cs" />
-      <File FileName="UITesting/BaseTestUI.cs" Line="95" Column="1" />
+      <File FileName="UITesting/BaseTestUI.cs" Line="78" Column="56" />
       <File FileName="APITesting/TestSuites/SiteSettings.cs" />
-      <File FileName="APITesting/TestSuites/Audience.cs" />
       <File FileName="APITesting/TestSuites/DispatchRequest.cs" />
       <File FileName="APITesting/TestSuites/GeneralAvailability.cs" />
       <File FileName="APITesting/TestSuites/LoginActivity.cs" />
@@ -35,33 +36,48 @@
       <File FileName="APITesting/Utilities/API.cs" />
       <File FileName="APITesting/Utilities/BaseUtilities.cs" />
       <File FileName="APITesting/App.config" />
-      <File FileName="APITesting/appsettings.json" />
-      <File FileName="APITesting/BaseTestAPI.cs" />
-      <File FileName="UITesting/Utilities/BaseUtilities.cs" />
-      <File FileName="UITesting/Utilities/Driver.cs" />
-      <File FileName="UITesting/Pages/pgOverview.cs" />
+      <File FileName="APITesting/appsettings.json" Line="10" Column="1" />
+      <File FileName="APITesting/BaseTestAPI.cs" Line="1" Column="1" />
+      <File FileName="UITesting/Utilities/BaseUtilities.cs" Line="62" Column="37" />
+      <File FileName="UITesting/Utilities/Driver.cs" Line="65" Column="1" />
+      <File FileName="UITesting/Pages/pgOverview.cs" Line="1" Column="1" />
       <File FileName="UITesting/TestSuites/Overview.cs" />
-      <File FileName="UITesting/appsettings.json" />
+      <File FileName="UITesting/appsettings.json" Line="12" Column="15" />
       <File FileName="UITesting/TestSuites/Dispatches.cs" />
-      <File FileName="UITesting/log4net.config" />
+      <File FileName="UITesting/log4net.config" Line="1" Column="1" />
       <File FileName="UITesting/TestSuites/Home.cs" Line="34" Column="15" />
+      <File FileName="UITesting/Utilities/UI.cs" Line="42" Column="14" />
+      <File FileName="UITesting/PageModels/GooglePageModel.cs" Line="8" Column="82" />
+      <File FileName="UITesting/Pages/pgGoogle.cs" Line="13" Column="28" />
+      <File FileName="UITesting/TestSuites/Google.cs" Line="19" Column="1" />
+      <File FileName="UITesting/Utilities/Configuration.cs" Line="21" Column="39" />
+      <File FileName="UITesting/UITesting.csproj" Line="4" Column="26" />
+      <File FileName="AppTesting/AppTests.csproj" Line="4" Column="26" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="266" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Test Automation">
-            <Node name="APITesting">
+          <Node name="Test Automation" expanded="True">
+            <Node name="UITesting" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="PageModels" expanded="True" />
+              <Node name="Reports" expanded="True">
+                <Node name="Testrun_20230911005139" expanded="True" />
+              </Node>
+              <Node name="TestSuites" expanded="True" />
               <Node name="Utilities" expanded="True" />
-            </Node>
-            <Node name="UITesting">
-              <Node name="BaseTestUI.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Test Automation" selected="True" />
+          <Node name="Test Automation">
+            <Node name="UITesting" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>

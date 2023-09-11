@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
+ <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
     <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
@@ -32,6 +32,7 @@
     <None Remove="Utilities\" />
     <None Remove="TestSuites\" />
     <None Remove="Pages\" />
+    <None Remove="PageModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="UITesting.csproj" />
@@ -45,5 +46,6 @@
     <Folder Include="Utilities\" />
     <Folder Include="TestSuites\" />
     <Folder Include="Pages\" />
+    <Folder Include="PageModels\" />
   </ItemGroup>
 </Project>
